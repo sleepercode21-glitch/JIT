@@ -15,15 +15,12 @@ public class Init {
     
 
     try {
-      boolean objectOk = objectDirectory.mkdirs();
-      boolean headsOk = headDirectory.mkdirs();
-      boolean headOk = head.createNewFile();
+      objectDirectory.mkdirs();
+      headDirectory.mkdirs();
+      head.createNewFile();
 
-      if (objectOk || headsOk || headOk) {
-        System.out.println("jit repo initialized");
-      } else {
-        System.out.println("failed to initialize jit! repo might already exist!");
-      }
+      System.out.println("jit repo initialized");
+      
     } catch (IOException e) {
       System.err.println("error: failed to initialize git repo");
       e.printStackTrace();
