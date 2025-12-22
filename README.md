@@ -1,6 +1,8 @@
 # JIT
 git but writtern in java!
 
+## How does the command line work??
+
 ok, to start of with we will have to dip into how command line works i..e. when you type
 into the command line how does it know what to do? where is the functionality of the 
 command line even stored? the short answer is when we type a command in the terminal, 
